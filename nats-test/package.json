@@ -1,0 +1,16 @@
+{
+  "name": "nats-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^16.10.1",
+    "node-nats-streaming": "^0.3.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "pub": "ts-node-dev --rs --notify false src/publisher.ts",
+    "lis": "ts-node-dev --rs --notify false src/listener.ts"
+  }
+}
