@@ -4,6 +4,8 @@ import { natsService } from './services/nats-service';
 const PORT = '3000';
 
 const start = async () => {
+  console.log('Expiration service starting...');
+
   if (!process.env.NATS_CLIENT_ID) {
     throw new Error('NATS_CLIENT_ID must be defined');
   }
