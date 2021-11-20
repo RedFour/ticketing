@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { IncomingMessage } from 'http';
 
-const INGRESS_SERVICE = 'http://www.yandachuan.com/';
+const INGRESS_SERVICE = 'http://www.yandachuan.com';
 
 const buildClient = (req: IncomingMessage) => {
   if (typeof window === 'undefined') {
